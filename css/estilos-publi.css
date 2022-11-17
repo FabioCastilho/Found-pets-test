@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {          /** Corpo do site **/
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+ /*Menu */
+
+header {
+    font-weight: 600;
+    width: 100%;
+}
+/*Menu */
+.logo h1 {
+    color: rgb(5, 5, 5);
+    font-weight: 600;
+    font-size: max(30px, 2vw);
+    margin: 0 auto;
+}
+.nav-bar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+
+.nav-list ul { 
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    /*font-size: max(20pt 3vw);*/
+    margin: 0 auto;
+    color: #000;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(17, 17, 17);
+}
+/* Efeito de linha no menu */
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #18272F;
+    bottom:0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  .nav-item a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+/* Fim do efeito de linha no menu */
+
+
+
+.login-button button {
+    border: none;
+    padding: 10px;
+    border-radius: 40px;
+    width: 100%;
+    background: #606c88;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 975px) {             /** Responsividade **/
+    
+header {
+    margin-top: 0px;
+}
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+
+/** Conteudo **/
+.conteudo {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+.conteudo h1 {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+
+}
+
+.aside {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/** Cards **/
+
+.card-pet {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+  margin:0 auto;
+  width: 100%;
+  margin-left: 4rem;
+  margin-top: 50px;
+  width: max(370px, 8vw);
+  color: #000;
+  text-align: left;
+  font-size: 16px;
+  background: #E9E7E7;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgb(128, 128, 128);
+}
+
+.card-pet *, /* efeito Esmaecer */
+.card-pet:before,
+.card-pet:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.card-pet img { /* imagem do pet no card */
+  max-width: 35%;
+  margin-top: -15px;
+  margin-left: 60%;
+  margin-bottom: 15px;
+  backface-visibility: hidden;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.card-pet figcaption { /*texto nome...*/
+  position: absolute;
+  top: 10px;
+  right: 40%;
+  left: 10px;
+  bottom: 0;
+}
+
+.card-pet h3 { /* texto*/
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.perdido {  /* TAG Perdido*/
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(-90deg, #EC4C4C, #F07575);;
+    margin-top: 0.5rem;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 12rem;
+    
+}
+
+.encontrado {  /* TAG Encontrado*/
+    border-radius: 20px;
+    border: 0;
+    background: linear-gradient(-90deg, #02ca5c, #04a040);;
+    margin-top: 0.5rem;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 12rem;
+    
+}
+
+
+
+.textosobre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.p-num {
+    font-weight: 600;
+    font-size: 40pt;
+    text-align: center;
+
+}
+
+.sobreimg {
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+
+/*-------*/
+
+input.pesquisa-botao {
+    width: 20rem;
+    padding: 10px;
+    border-radius:20px 0px 0px 20px;
+    border: 0 solid;
+    box-shadow: 5px 5px 20px rgb(128, 128, 128);
+
+}
+
+input.borda {
+    border-radius: 50px;
+    border-style: none;
+    border: solid;
+    text-align: center;
+    /*box-shadow: 0px 2px 3px 0px rgb(26 26 26);*/
+}
+
+.busca {
+    width: 10rem;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius:0px 20px 20px 0px;
+    border: 0px solid;
+    box-shadow: 5px 5px 20px rgb(128, 128, 128);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+}
+
+ .tipo-input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 600;
+ 
+    
+}
+
+.filtros
+{
+
+    margin-top: 1.5rem;
+    
+
+    
+}
+
+/*  Pagina Minhas Publicaçoes Botoes */
+.deletar-pet, .adicionar-pet { 
+    background: #B79891;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #94716B, #B79891); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 150px;;
+    height: 80px;
+    cursor:pointer;
+}
+
+
+/* Pagina Minhas Publicações */
+.minhas-publi {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulo-pag{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botoes {  
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.cards-publi{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+footer {
+	margin-top: 50px;
+	width: 100%;
+    height: 10%;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(230, 230, 230, 0.897);
+	color: rgb(31, 30, 30);
+	text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    box-shadow: 10px 5px 10px 1px rgb(26, 26, 26);
+
+}
+
+.icones-footer img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+.titulo-home{
+    margin-top: 30px;
+}
+
+.titulo-home h1{
+    font-weight: 700;
+    text-align: center;
+
+}
+.texto-home {
+    display: flex;
+    align-items: center;
+}
+.texto-home h3 {
+    display: flex;
+    width: 70%;
+    margin: 0;
+    font-size: 15pt; 
+    margin-top: -125px;
+}
+
+
+.cad {
+    margin-top: -100px;
+}
+.cad button {
+    width: 30%;
+    border-radius: 50px;
+    padding: 10px 10px;
+    border-style: none;
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.cad button a {
+    color: #E9E7E7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dep-card-geral {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: space-around;
+}
+
+.titulo-dep {
+    margin-top:70px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sub-dep{
+    margin:0;
+    font-size: 15pt;
+    font-weight: 600;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.dep-card {
+
+    border-radius: 20px;
+    width: 230px;
+    height: 320px;
+    padding: 15px;
+    margin: 0;
+    background-color: #d7e5ec;
+    box-shadow: 0px 1px 8px 0px;
+
+}
+
+.dep-card h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20pt;
+}
+
+.dep-card p {
+    font-weight: 600;
+}
+
+.dep-card img {
+    display: flex;
+    max-width: 50%;
+    height: 30%;
+    margin-top: -50px;
+    
+}

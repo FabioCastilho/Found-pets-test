@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Found Pets">
+        <meta name="author" content="Alunos"> 
+        <meta name="keywords" content="html, web, css">
+        <link href="estilos.css" rel="stylesheet">
+        <title>Found Pets</title>
+
+</head>
+<body>
+    
+    <!---Menu com JS-->
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Found Pets</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Pagina Incial</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Publicações</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Criar Publicações</a></li>
+                    <li class="nav-item"><a href="/sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar ou Cadastrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Pagina Incial</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Publicações</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Criar Publicações</a></li>
+                    <li class="nav-item"><a href="/sobre.html" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar ou Cadastrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <script src="/script.js"></script>
+    <!--Fim do Menu-->
+
+
+    <h1 class="titulo-pag">Minhas Publicações</h1>
+<section class="minhas-publi">
+
+                
+                <div class="botoes">
+                <button onclick="document.location='index.html'" type="button" class="adicionar-pet">Adicionar Pet</button>
+                <a href="#"><button type="button"  class="deletar-pet">Deletar Pet</button></a>
+                 </div>
+
+        
+        
+        <div class="cards-publi">
+                <div class="publi-criadas">
+                    <h4>Publicações Criadas</h4>
+                    <figure class="card-pet">
+                        <img src="/img/dog.png" alt="profile-sample6" />
+                        <figcaption>
+                        <div id="inline">
+                        <h3>Nome: Ice Cub </h3>
+                        <h3>Raça: Akita </h3>
+                        <h3>Bairro: Guarani BH-MG</h3>
+                        <button class="perdido">Perdido</button>
+                        </div>
+                        </div>
+                        </figcaption>
+                    </figure>
+                    <div class="publi-salvas">
+                        <h4>Publicações Salvas</h4>
+                        <figure class="card-pet">
+                            <img src="/img/dog.png" alt="profile-sample6" />
+                            <figcaption>
+                            <div id="inline">
+                            <h3>Nome: Ice Cub </h3>
+                            <h3>Raça: Akita </h3>
+                            <h3>Bairro: Guarani BH-MG</h3>
+                            <button class="perdido">Perdido</button>
+                            </div>
+                            </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                
+        </div>
+</section>
+
+
+<footer>
+	<p>Copyright &copy; 2022 | Desenvolvido por alunos de ADS da PUC MINAS.</p>
+    <div class="icones-footer">
+        <img src="/img/github.png">
+    </div>
+</footer>
+
+</body>
+
+</html>
