@@ -167,12 +167,11 @@ header {
 
 /** Conteudo **/
 .conteudo {
-
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    margin: 0% 5% 5% 0%;    
 
 
 }
@@ -265,13 +264,15 @@ header {
     
 }
 
-
+.textosobre h1 {
+    padding: 1%;
+}
 
 .textosobre {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+
 }
 
 .p-num {
