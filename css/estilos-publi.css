@@ -104,6 +104,21 @@ header {
     display: none;
 }
 
+@media screen and (max-width: 975px) {
+    img.imagem-home{
+        display: contents;
+    }
+    .titulo-home h1{
+        margin-bottom: 20px;
+    }
+    .texto-home p {
+        margin-bottom: 15px;
+    }
+    .cad {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 975px) {             /** Responsividade **/
     
 header {
@@ -147,9 +162,6 @@ header {
         display: block;
     }
 
-    .cad {
-        margin-top: -100px;
-    }
 }
 
 
@@ -401,9 +413,6 @@ footer {
 margin-top: -10px;
 padding-bottom: 10px;
 }
-.titulo-home{
-    margin-top: 30px;
-}
 
 .titulo-home h1{
     font-weight: 700;
@@ -423,9 +432,7 @@ padding-bottom: 10px;
 }
 
 
-.cad {
-    margin-top: -100px;
-}
+
 .cad button {
     border-radius: 50px;
     padding: 10px 10px;
@@ -532,8 +539,7 @@ img.pet-foto {
 
 }
 .container-dep {
-    margin-bottom: 72px;
-    /* margin: auto; */
+    margin: 0% 5% 0% 5%;
 }
 
 .dep-card-geral h1 {
