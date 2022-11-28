@@ -546,3 +546,58 @@ img.pet-foto {
 .dep-card-geral h1 {
     margin: 0;
 }
+
+
+
+
+/*Detalhe Pet*/
+
+.desc-pet-info {
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border-style: none;
+    resize: none;
+    background-color: rgb(206, 205, 205);
+    padding: 5px;
+}
+
+.detalhe-pet {
+    width: 100%;
+
+}
+.pric-foto-pet img{
+    width: 350px;
+}
+
+.fotos-pet{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.campo-foto-pet{
+    display: flex;
+    margin-top: 60px;
+    width: 90%;
+}
+
+.btn-ac {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btn-pet {
+    cursor: pointer;
+    width: 100px;
+    height: 90px;
+    text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(213,212,212,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.comentarios{
+    width: 90%;
+}
