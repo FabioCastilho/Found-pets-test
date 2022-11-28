@@ -601,3 +601,8 @@ img.pet-foto {
 .comentarios{
     width: 90%;
 }
+
+.conteudo-lista-pet a {
+    text-decoration: none;
+    color: #000;
+}
