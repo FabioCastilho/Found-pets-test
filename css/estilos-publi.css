@@ -637,8 +637,50 @@ img.pet-foto {
     border-radius: 5px;
 
 }
+
+input.coment-btn{
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(202, 176, 167);
+    margin-left: 40%;
+    cursor: pointer;
+}
+
 .conteudo-lista-pet a {
     text-decoration: none;
     color: #000;
 }
 
+
+
+@media screen and (max-width: 975px) {             /** Responsividade **/
+
+    #flex { display: flex; flex-direction: column; }
+    #a { order: 2; }
+    #b { order: 1; }
+    #c { order: 3; }
+    #d { order: 4; }
+
+
+    .fotos-pet {
+        display: flex;
+        flex-direction: row;
+    }
+    .pric-foto-pet img{
+        width: 300px;
+    }
+    .btn-ac{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 5rem;
+    }
+
+    input.coment-btn{
+        margin-left: 20%;
+    }
+
+}
