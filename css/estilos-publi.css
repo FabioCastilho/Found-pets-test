@@ -552,6 +552,10 @@ img.pet-foto {
 
 /*Detalhe Pet*/
 
+.info-pet h1{
+    font-weight: 500;
+    font-size: 12pt;
+}
 .desc-pet-info {
     width: 300px;
     text-align: center;
@@ -561,7 +565,16 @@ img.pet-foto {
     background-color: rgb(206, 205, 205);
     padding: 5px;
 }
-
+.desc-pet-info2 {
+    width: 300px;
+    min-height: 200px;
+    text-align: left;
+    border-radius: 5px;
+    border-style: none;
+    resize: none;
+    background-color: rgb(206, 205, 205);
+    padding: 5px;
+}
 .detalhe-pet {
     width: 100%;
 
@@ -570,24 +583,39 @@ img.pet-foto {
     width: 350px;
 }
 
+.pric-foto-pet{
+    margin: 0;
+}
+
+.fotos-pet img{
+    width: 80px;
+}
+
 .fotos-pet{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: 0;
 }
 .campo-foto-pet{
     display: flex;
     margin-top: 60px;
-    width: 90%;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
+
 
 .btn-ac {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin: 0;
 }
 
 .btn-pet {
+
     cursor: pointer;
     width: 100px;
     height: 90px;
@@ -599,10 +627,18 @@ img.pet-foto {
 }
 
 .comentarios{
-    width: 90%;
-}
+    width: 80%;
 
+}
+.coment-user{
+    margin-top: 1rem;
+    min-height: 50px;
+    background-color: rgb(206, 205, 205);
+    border-radius: 5px;
+
+}
 .conteudo-lista-pet a {
     text-decoration: none;
     color: #000;
 }
+
