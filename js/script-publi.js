@@ -10,3 +10,9 @@ function menuShow() {
 }
 
 // Java do filtro
+
+function trocaFoto (smallImg)
+{
+        var fullImg = document.getElementById("pet_box");
+        fullImg.src = smallImg.src;
+}

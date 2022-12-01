@@ -12,10 +12,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
     <title>Found Pets</title>
   </head>
 
@@ -73,19 +71,23 @@
         </div>
       </div>
     </header>
-
+ 
     <script src="/js/script-publi.js"></script>
     <!--Fim do Menu-->
     <section class="detalhe-pet">
       <div class="campo-foto-pet">
-        <div class="fotos-pet" id="a">
-          <img src="/img/detalhe-pet-peq.png" alt="" />
-          <img src="/img/detalhe-pet-peq.png" alt="" />
-          <img src="/img/detalhe-pet-peq.png" alt="" />
-        </div>
-        <div class="pric-foto-pet" id="b">
-          <img src="/img/pet-principal.png" alt="" />
-        </div>
+
+
+      <div class="pet_destaque">
+        <img id="pet_box" src="/img/pet_dog_01.jpg" alt="pet_destaque">
+      </div>
+
+      <div class="pet_thumb">
+        <img  src="/img/pet_dog_01.jpg" alt="pet_thumb" onclick="trocaFoto(this)">
+        <img  src="/img/pet_dog_02.jpg" alt="pet_thumb" onclick="trocaFoto(this)">
+        <img  src="/img/pet_dog_03.jpg" alt="pet_thumb" onclick="trocaFoto(this)">
+        <img  src="/img/pet_dog_04.jpg" alt="pet_thumb" onclick="trocaFoto(this)">
+      </div>
         <div class="info-pet" id="c">
           <h1>Nome</h1>
           <p class="desc-pet-info">Tripinha</p>
