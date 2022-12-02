@@ -20,15 +20,15 @@ function trocaFoto (smallImg)
 
 // login
 
-window.onload=function login(){
+function logar(){
 
-        var login = document.getElementById(login).value;
-        var senha = document.getElementById(senha).value;
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById('senha').value;
 
         if(login == "admin" && senha == "admin") {
-            alert(sucesso)}
-
-
-
+            alert('Você foi Logado com sucesso')
+        location.href = "index.html";
+        }else{
+            alert("Usuario ou senha incorretos.")
         }
-    
+    }
