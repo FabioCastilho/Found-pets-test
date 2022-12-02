@@ -9,10 +9,26 @@ function menuShow() {
     }
 }
 
-// Java do filtro
+// Foto galeria
 
 function trocaFoto (smallImg)
 {
         var fullImg = document.getElementById("pet_box");
         fullImg.src = smallImg.src;
 }
+
+
+// login
+
+window.onload=function login(){
+
+        var login = document.getElementById(login).value;
+        var senha = document.getElementById(senha).value;
+
+        if(login == "admin" && senha == "admin") {
+            alert(sucesso)}
+
+
+
+        }
+    
