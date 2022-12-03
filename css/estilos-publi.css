@@ -391,7 +391,7 @@ input.borda {
 }
 
 footer {
-	margin-top:20px;
+	margin-top:40px;
 	width: 100%;
 	left: 0;
     border-radius: 20px 20px 0px 0px;
@@ -828,6 +828,104 @@ input#enviar {
 }
 
 
+/* Registro page CSS*/
+
+
+
+.register_titulo {
+    margin-top: 40px;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*#register {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 600px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    opacity: 100%;
+    
+}
+*/
+.register_label {
+    font-size: 16px;
+    opacity: 100%;
+    display: block;
+}
+
+.register_input {
+    border-width: 1px;
+    width: 200px;
+    padding: 5px 0;
+    opacity: 100%;
+    border-radius: 20px;
+}
+
+
+
+.register_submit {
+    border: none;
+    background-color: lightcoral;
+    color: black;
+    border-radius: 5px;
+    width: 40%;
+    padding: 10px 0;
+    font-size: 13px;
+    transition:  0.5s all;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.register_submit:hover {
+    background-color: darkred;
+    font-size: 15px;
+    width: 45%;
+}
+
+.register_login {
+    padding: 10px;
+}
+
+.register_text_login{
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 620px) {
+    .card {
+        width: auto;
+        height: auto;
+    }
+    .input, .label {
+        z-index: 5;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+
+/* Fim registro page CSS*/
+
+
+
+
 @media screen and (max-width: 975px) {             /** Responsividade **/
 
     .pet_thumb img {
@@ -856,3 +954,4 @@ input#enviar {
         margin-left: 20%;
     }
 }
+
