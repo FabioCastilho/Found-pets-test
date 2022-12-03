@@ -657,7 +657,15 @@ input.coment-btn{
 }
 
 
+.det_pet{
+    display: flex;
+    margin: 0 10%;
+}
 
+.cria_pet{
+    display: flex;
+    margin: 0 10%;
+}
 
 
 .pet_thumb {
