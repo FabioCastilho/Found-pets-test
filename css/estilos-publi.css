@@ -708,6 +708,18 @@ button.photo_pet{
     background-color: rgb(199, 199, 199);
 
 }
+i.file_img {
+    width: 100px;
+    display: flex;
+    /* margin-top: 45%; */
+    cursor: pointer;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+input#file-input {
+    display: none;
+}
 
 .check {
     width: 100%;

@@ -32,3 +32,9 @@ function logar(){
             alert("Usuario ou senha incorretos.")
         }
     }
+
+
+    var input = document.getElementById('image-input');
+    var image = input.files[0];
+    
+    // Aqui, você pode fazer o upload da imagem para o servidor
