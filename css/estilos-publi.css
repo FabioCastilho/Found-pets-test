@@ -721,6 +721,27 @@ input#file-input {
     display: none;
 }
 
+.uploadLabel {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 50px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .uploadLabel_pr {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 189px 100px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .uploadButton {
+    display: none;
+  }
+
+
+
 .check {
     width: 100%;
     display: flex;
@@ -973,5 +994,20 @@ input#enviar {
     input.coment-btn{
         margin-left: 20%;
     }
+
+    .uploadLabel {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 25px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .uploadLabel_pr {
+        border: 1px solid #ccc;
+        display: inline-block;
+        padding: 130px 64px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
 }
 
